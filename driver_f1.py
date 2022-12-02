@@ -136,11 +136,7 @@ if __name__== '__main__':
     print ("F1 Score:")
     print ((precision_recall_fscore_support(test_labels,pred,average='micro'))[2])
     f1_scores_list.append((precision_recall_fscore_support(test_labels,pred,average='micro'))[2])
-
-    print ("Zero One Loss:")
-    zol = zero_one_loss(test_labels,pred)
-    print (zol)
-    zero_one_losses_list.append(zol)
+    
 
     fpr, tpr, thresholds = roc_curve(test_labels, pred)
     print ("Area under ROC curve")
