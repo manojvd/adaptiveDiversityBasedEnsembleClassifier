@@ -38,7 +38,7 @@ The below files have been created by us while making the project
 12. soft-computing.pdf - 2017 paper in pdf form
 
 
-## Step - wise explanation ##
+## Step - wise execution ##
 1. Execution starts from the execution of python files driver.py or driver_f1.py or any other file with driver in its name.
 2. the driver file calls the functions in other files for execution, by first calling manipulate_dataset for removing NaN values and extracting the features from the dataset.
 3. then the base models are selected by calling the function in base_model selector.py or base_model selector2.py
