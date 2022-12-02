@@ -1,8 +1,6 @@
-# adaptiveDiversityBasedEnsembleLearning
-
 # README #
 
-# IMAGE CAPTIONING #
+#git Repo link https://github.com/manojvd/adaptiveDiversityBasedEnsembleLearning  #
 
 This project is the implementation of the algorithm published in 2017 paper called "Adaptive Diversity Based Ensemble Classifier"
 
@@ -36,15 +34,16 @@ The below files have been created by us while making the project
 10. meta_model_trainer.py - trains the meta model with the relabelled features on the training set
 11. relabler.py - relabels the training set by their probabilities of generating positive result
 12. soft-computing.pdf - 2017 paper in pdf form
-
-
-## Step - wise execution ##
+</br>
+## Step - wise explanation ##
 1. Execution starts from the execution of python files driver.py or driver_f1.py or any other file with driver in its name.
 2. the driver file calls the functions in other files for execution, by first calling manipulate_dataset for removing NaN values and extracting the features from the dataset.
 3. then the base models are selected by calling the function in base_model selector.py or base_model selector2.py
 4. The function in relabler.py is called and the dataset is relabeled by maintaining a classifier map of all the models.
 5. We have made a few changes to the meta_model_trainer, by training the meta model by an ensemble model of many classification models for better results to change a few things regarding execution.
 6. the final model is evaluated and the f1 score is calculated to see how well the model fares(see screenshots in report)
+
+github link:
 
 
 
